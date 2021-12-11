@@ -23,9 +23,22 @@ nav{
     height: 30px;
     font-weight: bold;
     color: #ffffff;
-    
-     
+    animation-name: barra;    
+    animation-timing-function: linear steps(10);
+    animation-duration: 5s; 
 }
+
+@keyframes barra {
+    from {
+        background-color: darkgoldenrod ;
+    }
+
+    
+    to {
+        background-color: #1C83C5;
+    }
+
+  }
 
 
 .navbar{
@@ -99,7 +112,36 @@ section{
     font-size: 25px;
     color: #E80D0D;
     text-shadow: 2px 2px #ffecec;
+    
+    clear: both;
+    text-align: center;
 }
+
+.logocesur{
+    opacity: 0.75;
+    animation-name: logoRotar;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(20);
+    animation-duration: 1s;
+}
+
+@keyframes logoRotar {
+    from {
+        transform:rotate(0deg); ;
+    }
+
+    
+    to {
+        transform:rotate(360deg); ;
+    }
+
+  }
+
+.logocesur:hover{
+    opacity: 0.75;
+    transform:rotate(180deg); 
+}
+
 
 
 
@@ -131,6 +173,44 @@ section{
    
     margin: 25px 1% 0px 2%;
     border:10px solid rgb(252, 197, 43);
+}
+
+.imageprodcocina {
+   
+    display: block;
+    width: 80%;
+    height: 250px;
+    filter: grayscale(100%);
+    border-radius: 20%;  
+    
+    margin: 25px 1% 0px 2%;
+    border:10px solid rgb(252, 197, 43);
+}
+.imageprodfoto {
+   
+    display: block;
+    width: 80%;
+    height: 250px;
+    border-radius: 20%;    
+   
+    margin: 25px 1% 0px 2%;
+    border:10px solid rgb(252, 197, 43);
+    filter: saturate(7);
+}
+.imageproddj {
+   
+    display: block;
+    width: 80%;
+    height: 250px;
+    border-radius: 20%;  
+    
+   
+    margin: 25px 1% 0px 2%;
+    border:10px solid rgb(252, 197, 43);
+}
+
+.imageproddj:hover{
+    transform: scaleX(-1);
 }
 
 .inside {
@@ -166,7 +246,7 @@ section{
     width: 100%;
     height: 50%;
     float: left;
-    margin: 40px 0px 0px 0px;
+    margin: 40px 0px 80px 0px;
 }
 
 .textprod {
@@ -200,6 +280,54 @@ section{
     clear: both;
     text-shadow: 2px 2px #b9dbf2; /*efecto de sombra al texto*/
 }
+
+.videoRepr{
+    text-align: center;
+    
+}
+
+.videoRepr img{
+    
+        width: 50px;
+        height: 50px;
+    
+    
+}
+
+.dialog{
+    margin: 100px;
+    text-align: center;
+    border: 10px dotted blue;
+    padding: 20px;
+    color: darkblue;
+    animation-name: luces;  
+    
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes luces {
+    from {
+        border-color: #FFFB00 ;
+    }
+
+    50%{
+        border-color: red;
+    }
+
+    
+    to {
+        border-color: green ;
+    }
+
+  }
+
+.logocesur:hover{
+    opacity: 0.75;
+    transform:rotate(180deg); 
+}
+
+
 
 
 footer{

@@ -7,91 +7,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" type="text/css" href="main.css">
-    
+
 </head>
 
 <body>
 
 
 
-<div class="navbar">
-    <nav>
-        <ul>
-            
-            <li><a href="login.html">LOGIN</a></li>
-            <li><a href="registro.html">REGISTRO</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
-            
-        </ul>
-    </nav>
-</div>
+    <div class="navbar">
+        <nav>
+            <ul>
 
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="registro.html">REGISTRO</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
 
-
-
-<section>
-    <div class="productos">
-        <div class="cursos">
-            <div class="titprod"> Los mejores cursos de Cesur </div>
-            <div class="containertext">
-                <img class="imageprod" src="daw.jpg">
-                <div class="inside">
-                    <div class="price">3.000€</div>
-                    <div class="textprod">Solicitar</div>
-                </div>
-            </div>
-            <div class="containertext">
-                <img class="imageprod" src="dam.jpg">
-                <div class="inside">
-                    <div class="price">3.000€</div>
-                    <div class="textprod">Solicitar</div>
-                </div>
-            </div>
-            <div class="containertext">
-                <img class="imageprod" src="asir.jpg">
-                <div class="inside">
-                    <div class="price">3.000€</div>
-                    <div class="textprod">Solicitar</div>
-                </div>
-            </div>
+            </ul>
+        </nav>
     </div>
 
-    <div class="productosNuevos">
-        <div class="nuevos">
-            <div class="titNuevos">Nuevos Cursos</div>
-            <div class="containertext">
-                <img class="imageprod2" src="dj.jpg">
-                <div class="inside">
-                    <div class="price">3.000€</div>
-                    <div class="textprod">Solicitar</div>
+    <div class="reproductor">
+        <audio controls>
+            <source src="Alexander_Nakarada_-_The_Return.mp3" type="audio/ogg">
+            <source src="Alexander_Nakarada_-_The_Return.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+    </div>
+
+
+
+
+    <section>
+        <div class="productos">
+            <div class="cursos">
+                <div class="titprod">
+                    <p> <img class="logocesur" src="logoPropioReducido.png"></p> Los mejores cursos de Cesur
+
+
+                </div>
+                <div class="containertext">
+                    <img class="imageprod" src="daw.jpg">
+                    <div class="inside">
+                        <div class="price">3.000€</div>
+                        <div class="textprod">Solicitar</div>
+                    </div>
+                </div>
+                <div class="containertext">
+                    <img class="imageprod" src="dam.jpg">
+                    <div class="inside">
+                        <div class="price">3.000€</div>
+                        <div class="textprod">Solicitar</div>
+                    </div>
+                </div>
+                <div class="containertext">
+                    <img class="imageprod" src="asir.jpg">
+                    <div class="inside">
+                        <div class="price">3.000€</div>
+                        <div class="textprod">Solicitar</div>
+                    </div>
                 </div>
             </div>
-            <div class="containertext">
-                <img class="imageprod2" src="fotografia.jpg">
-                <div class="inside">
-                    <div class="price">3.000€</div>
-                    <div class="textprod">Solicitar</div>
+
+            <div class="productosNuevos">
+                <div class="nuevos">
+                    <div class="titNuevos">Nuevos Cursos</div>
+                    <div class="containertext">
+                        <img class="imageproddj" src="dj-Modificado.jpg">
+                        <div class="inside">
+                            <div class="price">3.000€</div>
+                            <div class="textprod">Solicitar</div>
+                        </div>
+                    </div>
+                    <div class="containertext">
+                        <img class="imageprodfoto" src="fotografía-Modificado.png">
+                        <div class="inside">
+                            <div class="price">3.000€</div>
+                            <div class="textprod">Solicitar</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </div>
-            <div class="containertext">
-                <img class="imageprod2" src="cocina.jpg">
-                <div class="inside">
-                    <div class="price">3.000€</div>
-                    <div class="textprod">Solicitar</div>
+                <div class="containertext">
+                    <img class="imageprodcocina" src="cocina-Modificado.jpg">
+                    <div class="inside">
+                        <div class="price">3.000€</div>
+                        <div class="textprod">Solicitar</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-</section>
+        <div style="margin: 100px;" class="videoRepr">
+
+            <video id="reprVideo" width="500" height="300" preload="metadata" poster="navidad.jpg">
+                <!--el poster pone una imagen previa-->
+                <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <div>
+                <button id="botonplay" onclick="document.getElementById('reprVideo').play()"><img
+                        src="play.png"></button>
+                <button id="botonstop" onclick="document.getElementById('reprVideo').pause()"><img
+                        src="stop.png"></button>
+                <button id="botonmas" onclick="document.getElementById('reprVideo').volume+=0.1"><img
+                        src="mas.png"></button>
+                <button id="botonmenos" onclick="document.getElementById('reprVideo').volume-=0.1"><img
+                        src="menos.png"></button>
+            </div>
+        </div>
 
 
-<footer>
-    
+        <div class="dialog">
+            <h1>FELICITACION NAVIDEÑA</h1>
+
+
+
+            <dialog id="dialogo" style="text-align: center; width: 1800px;height: 1200px;">
+               <p> <button style="width: 200px;height: 50px;" id="close" onclick="document.getElementById('dialogo').close();">Volver</button></p>
+                <img  src="https://acegif.com/wp-content/gif/feliznvdd-unq-4.gif" alt="">
+                
+            </dialog>
+
+            <button style="width: 200px;height: 50px;" id="show" onclick="document.getElementById('dialogo').showModal();">Abrir</button>
+
+        </div>
+
+
+
+    </section>
+
+
+    <footer>
+
         <p>Política de Privacidad en Cesur Formacion </p>
- 
-</footer>
+
+    </footer>
 
 </body>
 
